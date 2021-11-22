@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load geometry %}
+
+{% block content %}
+    {% for obj in objects %}
+        {% render_shape shape=obj %}
+    {% endfor %}
+{% endblock %}
