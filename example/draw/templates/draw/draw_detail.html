@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load geometry %}
+{% block content %}
+    <h3>Foreign key, Many to many</h3>
+    {# Для ManyToMany можем также обратиться через {имя модели строчные буквы}_set #}
+    {# Возвращается объект QuerySet #}
+    <a href="{% url "draw:albums:detail" object.album_set.first.id %}">Альбом</a>
+
+    {# Название поля в общем случае {имя модели строчные буквы}_set #}
+    {# Возвращается объект QuerySet #}
+    {% for shape in object.shape_set.all %}
+        {% render_shape shape=shape %}
+    {% endfor %}
+{% endblock %}
