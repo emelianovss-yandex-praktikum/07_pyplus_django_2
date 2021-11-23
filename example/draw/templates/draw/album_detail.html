@@ -7,4 +7,10 @@
 {% for obj in object.draws.all %}
     <p>Рисунок {{ obj.title }} <a href="{% url "draw:detail" obj.id %}">Ссылка</a> </p>
 {% endfor %}
+    <h3>Добавить рисунок</h3>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_table }}
+        <button type="submit">Добавить</button>
+    </form>
 {% endblock %}
