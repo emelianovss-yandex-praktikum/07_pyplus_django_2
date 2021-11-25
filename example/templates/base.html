@@ -1,3 +1,25 @@
-<div><a href="/">Index</a></div>
-{% block content %}
-{% endblock %}
+<style>
+    .content {
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+    table, td, th {
+      border: 1px solid black;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+</style>
+
+<div class="content">
+    <div style="display: flex">
+        <a href="/">Index </a>
+        <span>/</span>
+        {% block crumbs %}
+        {% endblock %}
+    </div>
+    {% block content %}
+    {% endblock %}
+</div>

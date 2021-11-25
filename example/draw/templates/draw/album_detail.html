@@ -1,9 +1,13 @@
 {% extends 'base.html' %}
 {% load geometry %}
 
+{% block crumbs %}
+    <a href="{% url "draw:albums:list" %}">Альбомы</a>
+    <span>/{{ object.id }}</span>
+{% endblock %}
+
 {% block content %}
     <h3>Many to many</h3>
-    <a href="{% url "draw:albums:list" %}">Альбомы</a>
 {% for obj in object.draws.all %}
     <p>Рисунок {{ obj.title }} <a href="{% url "draw:detail" obj.id %}">Ссылка</a> </p>
 {% endfor %}

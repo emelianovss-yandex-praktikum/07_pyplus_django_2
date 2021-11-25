@@ -5,5 +5,6 @@ from geometry import views
 app_name = 'geometry'
 
 urlpatterns = [
-    path('', views.index, name='index')
+    path('add/draw/<int:pk>', views.CreateShape.as_view(), name='add-to-draw'),
+    path('', views.ListShapes.as_view(), name='index'),
 ]

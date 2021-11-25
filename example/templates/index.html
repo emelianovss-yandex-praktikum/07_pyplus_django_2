@@ -1,8 +1,7 @@
 {% extends 'base.html' %}
-
 {% block content %}
     <ul>
-        <li><a href="{% url "geometry:index" %}">Shapes</a></li>
         <li><a href="{% url "draw:albums:list" %}">Related</a></li>
+        <li><a href="{% url "geometry:index" %}">Shapes</a></li>
     </ul>
 {% endblock %}

@@ -8,8 +8,10 @@ TODO:
 - get_or_create
 - class view Create, List, Delete, Update (Создадим свой router)
 - class view extend context
-- template extend
+- template extend (super, block, inner block)
 - template include
+- prefetch related
+- select related
 
 DONE:
 - ForeignKey (related_name)
