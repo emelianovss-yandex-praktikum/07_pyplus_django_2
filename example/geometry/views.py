@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.urls import reverse
 
 from geometry.models import Shape
@@ -6,10 +5,12 @@ from django.views.generic import CreateView, ListView
 
 
 class ListShapes(ListView):
+    # Или queryset или get_query_set
     queryset = Shape.objects.order_by('id')
 
 
 class CreateShape(CreateView):
+    # Или модель
     model = Shape
     fields = ['color', 'kind']
 

@@ -7,6 +7,7 @@
     {# Для ManyToMany можем также обратиться через {имя модели строчные буквы}_set #}
     {# Возвращается объект QuerySet #}
     <a href="{% url "draw:albums:detail" object.album_set.first.id %}">{{ object.album_set.first.id }}</a>
+    <span>/Рисунок/{{ object.id }}</span>
 {% endblock %}
 
 {% block content %}

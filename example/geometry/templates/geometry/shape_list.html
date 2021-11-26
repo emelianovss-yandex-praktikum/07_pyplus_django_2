@@ -14,10 +14,10 @@
                     {% render_shape shape=obj %}
                 </td>
                 <td>
-                    <a href="{% url "draw:detail" obj.draw_id %}">Рисунок</a>
+                    <a href="{% url "draw:detail" obj.draw_id %}">Рисунок {{ obj.draw_id }}</a>
                 </td>
                 <td>
-                    <a href="{% url "draw:albums:detail" obj.draw.album_set.first.id %}">Альбом</a>
+                    <a href="{% url "draw:albums:detail" obj.draw.album_set.first.id %}">Альбом {{ obj.draw.album_set.first.id }}</a>
                 </td>
             </tr>
         {% endfor %}
