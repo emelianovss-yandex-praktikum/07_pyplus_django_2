@@ -1,16 +1,16 @@
 # 07_pyplus_django_2
 
 Models
-- [ ] OneToOne - Пример альбомы
-- [ ] ManyToMany - Пример рисунки и ссылка на альбом
-- [ ] ForeignKey - Пример фигуры для рисунка
-- [ ] select_related - изменяем для user album 
-- [ ] prefetch_related - 
-- [ ] blank, null, default - Изменим shape
+- [X] OneToOne - Пример альбомы
+- [X] ManyToMany - Пример рисунки и ссылка на альбом
+- [X] ForeignKey - Пример фигуры для рисунка
+- [X] select_related - изменяем для user album 
+- [X] prefetch_related - 
+- [X] blank, null, default - Изменим shape
 
 URLs
-- [ ] Include - Альбомы, вложенный include, показать что можно менять URL
-- [ ] Params - Альбомы и рисунки для функций, фигуры для классов
+- [X] Include - Альбомы, вложенный include, показать что можно менять URL
+- [X] Params - Альбомы и рисунки для функций, фигуры для классов
 
 Views
 - [ ] POST, Forms - пример с созданием рисунка
@@ -20,6 +20,6 @@ Views
 
 Templates:
 - [ ] Custom tag - пример с shape 
-- [ ] Extend, block - структура шаблонов, блок и подблок
-- [ ] Block super - пример на crumbs
-- [ ] Include - изменим тэг на include, include для альбома
+- [X] Extend, block - структура шаблонов, блок и подблок
+- [X] Block super - пример на crumbs
+- [X] Include - изменим тэг на include, include для альбома
