@@ -2,7 +2,7 @@
 {% load geometry %}
 
 {% block crumbs %}
-    <a href="{% url "draw:albums:list" %}">Альбомы</a>
+    <a href="{% url "draw:albums:users-list" %}">Альбомы</a>
     <span>/</span>
     {# Для ManyToMany можем также обратиться через {имя модели строчные буквы}_set #}
     {# Возвращается объект QuerySet #}

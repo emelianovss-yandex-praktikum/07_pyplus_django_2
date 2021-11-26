@@ -5,9 +5,8 @@ Models
 - [ ] ManyToMany - Пример рисунки и ссылка на альбом
 - [ ] ForeignKey - Пример фигуры для рисунка
 - [ ] select_related - изменяем для user album 
-- [ ] prefetch_related - ? Может пример со статистикой для альбомов
-- [ ] blank, null, default - ? Может пример с изменением shape
-- [ ] get, filter, get_or_create - ?
+- [ ] prefetch_related - 
+- [ ] blank, null, default - Изменим shape
 
 URLs
 - [ ] Include - Альбомы, вложенный include, показать что можно менять URL
@@ -17,10 +16,10 @@ Views
 - [ ] POST, Forms - пример с созданием рисунка
 - [ ] FILES - загрузка рисунков
 - [ ] Create, List - пример с Shape
-- [ ] Расширение view - пример с формой
+- [ ] Расширение view - пример с формой, почему похоже на DRF и покажем кусочки
 
 Templates:
 - [ ] Custom tag - пример с shape 
-- [ ] Extend, block - ?
-- [ ] Block super - ?
-- [ ] Include - ?
+- [ ] Extend, block - структура шаблонов, блок и подблок
+- [ ] Block super - пример на crumbs
+- [ ] Include - изменим тэг на include, include для альбома

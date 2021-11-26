@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block crumbs %}
+    Альбомы
+{% endblock %}
+
+{% block content %}
+    <h3>Prefetch related</h3>
+{% for obj in objects %}
+    <p>Альбом для пользователя: {{ obj.user.username }}, <a href="{% url 'draw:albums:detail' obj.id %}">Ссылка</a></p>
+    <ul>
+    {% for draw in obj.draws.all %}
+        <li>{{ draw.title }}</li>
+    {% endfor %}
+    </ul>
+{% endfor %}
+{% endblock %}

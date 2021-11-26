@@ -12,7 +12,7 @@ if TYPE_CHECKING:
 User = get_user_model()
 
 
-def album_list(request: 'HttpRequest'):
+def users_album_list(request: 'HttpRequest'):
     return render(
         request,
         'draw/album_list.html',
@@ -43,6 +43,14 @@ def album_detail(request: 'HttpRequest', pk: int):
         request,
         'draw/album_detail.html',
         {'object': album, 'form': form}
+    )
+
+
+def draw_list(request: 'HttpRequest'):
+    return render(
+        request,
+        'draw/draw_list.html',
+        {'objects': Album.objects.all()}
     )
 
 
