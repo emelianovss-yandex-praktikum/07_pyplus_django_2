@@ -1,2 +1,5 @@
 Django
 django-debug-toolbar
+pytest
+pytest-django
+requests
